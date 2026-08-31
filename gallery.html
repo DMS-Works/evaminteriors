@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <header class="site-header">
     <div class="header-inner">
       <div class="logo-area"></div>
@@ -29,12 +28,10 @@
       </button>
     </div>
   </header>
-
   <section class="page-banner">
-    <p class="page-eyebrow">Gallery</p>
-    <h1 class="page-title">A feel for our style</h1>
+    <h1 class="page-title">Imagine Your Space</h1>
+    <p class="page-subtitle">Explore ideas, textures and tones for your space</p>
   </section>
-
   <section class="gallery-grid">
     <div class="gallery-placeholder">[IMAGE 1]</div>
     <div class="gallery-placeholder">[IMAGE 2]</div>
@@ -43,26 +40,21 @@
     <div class="gallery-placeholder">[IMAGE 5]</div>
     <div class="gallery-placeholder">[IMAGE 6]</div>
   </section>
-
   <section class="about-cta">
     <h2>Ready to start your project?</h2>
     <a href="contact.html" class="btn-primary">Book a Consultation</a>
   </section>
-
   <footer class="site-footer">
     <p>&copy; 2026 Eva M Interiors. All rights reserved.</p>
   </footer>
-
   <script>
     const menuToggle = document.getElementById('menu-toggle');
     const mainNav = document.getElementById('main-nav');
-
     menuToggle.addEventListener('click', function () {
       const isOpen = mainNav.classList.toggle('nav-open');
       menuToggle.classList.toggle('is-active', isOpen);
       menuToggle.setAttribute('aria-expanded', isOpen);
     });
   </script>
-
 </body>
 </html>
