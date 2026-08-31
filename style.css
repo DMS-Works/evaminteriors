@@ -70,7 +70,7 @@ a {
 .hero {
   position: relative;
   width: 100%;
-  aspect-ratio: 1402 / 1122;
+  aspect-ratio: 1536 / 1024;
   background-image: linear-gradient(rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.28)), url('Bedroom3.png');
   background-size: cover;
   background-position: center;
@@ -83,7 +83,7 @@ a {
 .hero-inner {
   max-width: 480px;
   margin: 0 auto;
-  text-align: left;
+  text-align: center;
 }
 
 .hero-eyebrow {
