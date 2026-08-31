@@ -70,7 +70,7 @@ a {
 .hero {
   position: relative;
   width: 100%;
-  min-height: 70vh;
+  aspect-ratio: 1402 / 1122;
   background-image: linear-gradient(rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.28)), url('Bedroom3.png');
   background-size: cover;
   background-position: center;
@@ -125,12 +125,8 @@ a {
   background: #e9e3d6;
 }
 
-/* Hero responsive scaling across breakpoints */
+/* Hero text scaling across breakpoints (aspect-ratio handles the image sizing automatically) */
 @media (max-width: 1024px) {
-  .hero {
-    min-height: 60vh;
-  }
-
   .hero-title {
     font-size: 34px;
   }
@@ -138,14 +134,13 @@ a {
 
 @media (max-width: 768px) {
   .hero {
-    min-height: 55vh;
-    padding: 48px 24px;
+    padding: 24px;
     align-items: flex-end;
-    padding-bottom: 56px;
+    padding-bottom: 40px;
   }
 
   .hero-title {
-    font-size: 28px;
+    font-size: 26px;
   }
 
   .hero-inner {
@@ -154,10 +149,6 @@ a {
 }
 
 @media (min-width: 1440px) {
-  .hero {
-    min-height: 75vh;
-  }
-
   .hero-title {
     font-size: 48px;
   }
