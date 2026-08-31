@@ -19,8 +19,12 @@ a {
 
 /* ===== Header / Nav ===== */
 .site-header {
-  border-bottom: 1px solid #e5e3dc;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: transparent;
 }
 
 .header-inner {
@@ -45,12 +49,12 @@ a {
 
 .main-nav a {
   font-size: 14px;
-  color: #000;
+  color: #F5F1EA;
   white-space: nowrap;
 }
 
 .main-nav a:hover {
-  color: #5f5e5a;
+  color: #e9e3d6;
 }
 
 .menu-toggle {
@@ -67,7 +71,7 @@ a {
 .menu-toggle span {
   width: 22px;
   height: 2px;
-  background: #000;
+  background: #F5F1EA;
   display: block;
 }
 
@@ -76,7 +80,7 @@ a {
   position: relative;
   width: 100%;
   aspect-ratio: 1536 / 1024;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), url('Bedroom3.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url('Bedroom3.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -129,8 +133,8 @@ a {
   display: inline-block;
   font-family: 'Inter', sans-serif;
   font-weight: 500;
-  font-size: 18px;
-  padding: 7px 16px;
+  font-size: 16px;
+  padding: 6px 14px;
   background: #F5F1EA;
   color: #2B1E17;
   border-radius: 2px;
@@ -174,6 +178,14 @@ a {
 
   .main-nav.nav-open {
     display: flex;
+  }
+
+  .main-nav.nav-open a {
+    color: #000;
+  }
+
+  .main-nav.nav-open a:hover {
+    color: #5f5e5a;
   }
 
   .menu-toggle {
