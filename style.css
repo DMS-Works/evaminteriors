@@ -469,6 +469,23 @@ a {
 }
 
 /* ===== Pricing Page ===== */
+.pricing-hero {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10)), url('PricingBg.png'); /* upload your desk/planner photo to the repo as PricingBg.png */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 40px 100px;
+}
+
+.pricing-hero .page-banner {
+  padding: 0 40px 40px;
+}
+
+.pricing-hero .page-title {
+  color: #F5F1EA;
+}
+
 .pricing-card-wrap {
   max-width: 500px;
   margin: 0 auto;
@@ -476,7 +493,9 @@ a {
 }
 
 .pricing-card {
-  background: #F5F1EA;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
   padding: 44px 36px;
   border-radius: 4px;
   text-align: center;
@@ -487,34 +506,39 @@ a {
   font-weight: 500;
   font-size: 22px;
   margin-bottom: 12px;
+  color: #F5F1EA;
 }
 
 .pricing-card .consultation-intro {
   font-size: 14px;
-  color: #5f5e5a;
+  color: #EDE8DE;
   margin-bottom: 20px;
   line-height: 1.6;
 }
 
 .pricing-card .price {
   margin-bottom: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #F5F1EA;
 }
 
 .pricing-card .price-amount {
-  font-family: 'Playfair Display', serif;
-  font-size: 36px;
-  color: #000;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #F5F1EA;
 }
 
 .pricing-card .price-unit {
   font-family: 'Inter', sans-serif;
-  font-size: 14px;
-  color: #5f5e5a;
+  font-size: 16px;
+  color: #cfc9bc;
 }
 
 .pricing-card .price-disclaimer {
   font-size: 12px;
-  color: #8a8375;
+  color: #cfc9bc;
   line-height: 1.5;
   margin-bottom: 28px;
 }
@@ -526,34 +550,129 @@ a {
   text-align: left;
 }
 
-.booking-widget label {
-  font-size: 13px;
-  color: #5f5e5a;
-  margin-top: 10px;
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+  margin-bottom: 10px;
 }
 
-.booking-widget input[type="date"],
-.booking-widget input[type="time"] {
-  font-family: 'Inter', sans-serif;
-  font-size: 14px;
-  padding: 10px 12px;
-  border: 1px solid #c9c2b3;
-  border-radius: 2px;
-  background: #fff;
+.cal-nav {
+  background: none;
+  border: none;
+  color: #F5F1EA;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 4px 10px;
 }
 
-.booking-widget .btn-primary {
-  margin-top: 20px;
-  text-align: center;
+.cal-nav:hover {
+  color: #cfc9bc;
 }
 
-.pricing-card .btn-primary {
-  background: #000;
+.cal-month-label {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
   color: #F5F1EA;
 }
 
-.pricing-card .btn-primary:hover {
-  background: #222;
+.calendar-daynames {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  color: #cfc9bc;
+  margin-bottom: 6px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  margin-bottom: 16px;
+}
+
+.cal-day {
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: #F5F1EA;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.cal-day:hover:not(.cal-day-disabled) {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.cal-day-muted {
+  color: rgba(245, 241, 234, 0.3);
+  cursor: default;
+}
+
+.cal-day-disabled {
+  color: rgba(245, 241, 234, 0.25);
+  cursor: not-allowed;
+}
+
+.cal-day-selected {
+  background: #F5F1EA;
+  color: #2B1E17;
+  font-weight: 500;
+}
+
+.selected-date-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: #F5F1EA;
+  margin-bottom: 10px;
+}
+
+.time-slots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.time-slot {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  padding: 8px 14px;
+  background: none;
+  border: 1px solid rgba(245, 241, 234, 0.4);
+  border-radius: 2px;
+  color: #F5F1EA;
+  cursor: pointer;
+}
+
+.time-slot:hover {
+  border-color: #F5F1EA;
+}
+
+.time-slot-selected {
+  background: #F5F1EA;
+  color: #2B1E17;
+  border-color: #F5F1EA;
+}
+
+.booking-widget .btn-primary {
+  margin-top: 4px;
+  text-align: center;
+  background: #F5F1EA;
+  color: #2B1E17;
+  width: 100%;
+}
+
+.booking-widget .btn-primary:hover {
+  background: #e9e3d6;
 }
 
 /* ===== FAQs Page ===== */
