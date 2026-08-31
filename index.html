@@ -10,15 +10,15 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <header class="site-header transparent-header">
     <div class="header-inner">
       <div class="logo-area"></div>
       <nav class="main-nav" id="main-nav">
-        <a href="about.html">About</a>
+        <a href="index.html">Home</a>
         <a href="services.html">Services</a>
-        <a href="gallery.html">Gallery</a>
         <a href="pricing.html">Pricing</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
         <a href="faqs.html">FAQs</a>
         <a href="contact.html">Contact</a>
       </nav>
@@ -29,7 +29,6 @@
       </button>
     </div>
   </header>
-
   <section class="hero">
     <div class="hero-inner">
       <h1 class="hero-title">A home that feels like <em>you</em>.</h1>
@@ -37,7 +36,6 @@
       <a href="contact.html" class="btn-primary">Book a Consultation</a>
     </div>
   </section>
-
   <section class="services-preview">
     <div class="service-item">
       <h3>Mood boards</h3>
@@ -52,21 +50,17 @@
       <p>End-to-end sourcing and execution for a finished, lived-in space.</p>
     </div>
   </section>
-
   <footer class="site-footer">
     <p>&copy; 2026 Eva M Interiors. All rights reserved.</p>
   </footer>
-
   <script>
     const menuToggle = document.getElementById('menu-toggle');
     const mainNav = document.getElementById('main-nav');
-
     menuToggle.addEventListener('click', function () {
       const isOpen = mainNav.classList.toggle('nav-open');
       menuToggle.classList.toggle('is-active', isOpen);
       menuToggle.setAttribute('aria-expanded', isOpen);
     });
   </script>
-
 </body>
 </html>
