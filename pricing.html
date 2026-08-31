@@ -10,15 +10,15 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <header class="site-header">
     <div class="header-inner">
       <div class="logo-area"></div>
       <nav class="main-nav" id="main-nav">
-        <a href="about.html">About</a>
+        <a href="index.html">Home</a>
         <a href="services.html">Services</a>
-        <a href="gallery.html">Gallery</a>
         <a href="pricing.html">Pricing</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
         <a href="faqs.html">FAQs</a>
         <a href="contact.html">Contact</a>
       </nav>
@@ -29,36 +29,39 @@
       </button>
     </div>
   </header>
-
   <section class="page-banner">
-    <p class="page-eyebrow">Pricing</p>
-    <h1 class="page-title">Simple, transparent pricing</h1>
+    <h1 class="page-title">Invest in Your Space</h1>
   </section>
-
   <section class="pricing-card-wrap">
     <div class="pricing-card">
       <h2>Consultation</h2>
-      <p class="price">£50</p>
-      <p class="price-note">Up to 45 minutes</p>
-      <p>[Placeholder copy: any additional time beyond 45 minutes is charged separately, confirmed with Eva ahead of your session.]</p>
-      <a href="contact.html" class="btn-primary">Book a Consultation</a>
+      <p class="consultation-intro">A 45-minute consultation designed to understand you, your space alongside your ideas and goals.</p>
+      <p class="price"><span class="price-amount">£50</span> <span class="price-unit">per consultation</span></p>
+      <p class="price-disclaimer">Please note: for more in-depth design consultations, pricing will be quoted according to your requirements.</p>
+
+      <div class="booking-widget">
+        <label for="booking-date">Choose a date</label>
+        <input type="date" id="booking-date" name="booking-date">
+
+        <label for="booking-time">Choose a time</label>
+        <input type="time" id="booking-time" name="booking-time">
+
+        <!-- TODO: replace href="#" with your Calendly (or chosen booking tool) link once set up -->
+        <a href="#" class="btn-primary" id="book-consultation-btn">Book Your Consultation</a>
+      </div>
     </div>
   </section>
-
   <footer class="site-footer">
     <p>&copy; 2026 Eva M Interiors. All rights reserved.</p>
   </footer>
-
   <script>
     const menuToggle = document.getElementById('menu-toggle');
     const mainNav = document.getElementById('main-nav');
-
     menuToggle.addEventListener('click', function () {
       const isOpen = mainNav.classList.toggle('nav-open');
       menuToggle.classList.toggle('is-active', isOpen);
       menuToggle.setAttribute('aria-expanded', isOpen);
     });
   </script>
-
 </body>
 </html>
