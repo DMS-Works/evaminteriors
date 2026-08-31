@@ -325,6 +325,14 @@ a {
   color: #000;
 }
 
+.page-subtitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 17px;
+  color: #5f5e5a;
+  margin-top: 10px;
+}
+
 /* ===== About Page ===== */
 .about-content {
   max-width: 1200px;
