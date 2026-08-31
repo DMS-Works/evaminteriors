@@ -108,11 +108,19 @@ a {
   margin-bottom: 16px;
 }
 
+.hero-title em {
+  font-style: italic;
+}
+
 .hero-subtitle {
+  display: inline-block;
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
   font-size: 16px;
   color: #F5F1EA;
+  background: rgba(0, 0, 0, 0.08);
+  padding: 8px 14px;
+  border-radius: 2px;
   margin-bottom: 28px;
   line-height: 1.6;
 }
@@ -188,6 +196,7 @@ a {
     padding: 24px;
     align-items: flex-end;
     padding-bottom: 40px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url('Bedroom3.png');
   }
 
   .hero-title {
