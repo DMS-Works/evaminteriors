@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQs | Eva M Interiors</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo-area"></div>
+      <nav class="main-nav" id="main-nav">
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="faqs.html">FAQs</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="page-banner">
+    <p class="page-eyebrow">FAQs</p>
+    <h1 class="page-title">Common questions</h1>
+  </section>
+
+  <section class="faqs-list">
+    <div class="faq-item">
+      <h3>How much does a consultation cost, and what happens during it?</h3>
+      <p>[Placeholder answer copy: explain the 45-minute consultation covers understanding their space, needs and vision, and that additional time is charged separately.]</p>
+    </div>
+    <div class="faq-item">
+      <h3>Can I see examples of your previous work?</h3>
+      <p>[Placeholder answer copy: explain the portfolio is shared directly with prospective clients rather than displayed publicly, to protect past clients' privacy.]</p>
+    </div>
+    <div class="faq-item">
+      <h3>How long does a typical project take, from start to finish?</h3>
+      <p>[Placeholder answer copy: outline the client journey — consultation, mood board, design proposal, sourcing, installation, finished space.]</p>
+    </div>
+    <div class="faq-item">
+      <h3>Do you visit my home, or can we work together virtually?</h3>
+      <p>[Placeholder answer copy: clarify whether consultations happen in person, virtually, or both, and mention virtual walkthroughs as an option.]</p>
+    </div>
+    <div class="faq-item">
+      <h3>Do you source and buy furniture for me, or just recommend it?</h3>
+      <p>[Placeholder answer copy: explain sourcing and purchasing is handled on the client's behalf, separate from the design fee.]</p>
+    </div>
+    <div class="faq-item">
+      <h3>Will you work within my budget?</h3>
+      <p>[Placeholder answer copy: reassure that budget is discussed openly at consultation stage, and mood boards let clients see direction before committing to spend.]</p>
+    </div>
+    <div class="faq-item">
+      <h3>What's the difference between a mood board and full design execution?</h3>
+      <p>[Placeholder answer copy: explain a mood board agrees the direction first, while full design execution covers sourcing and delivery.]</p>
+    </div>
+    <div class="faq-item">
+      <h3>I have a deadline in mind — can you work to it?</h3>
+      <p>[Placeholder answer copy: reference the completion date field on the contact form, and note timescales are confirmed after reviewing the enquiry.]</p>
+    </div>
+    <div class="faq-item">
+      <h3>What areas do you cover — do you travel to my home?</h3>
+      <p>[Placeholder answer copy: confirm which areas/regions are covered for in-person visits.]</p>
+    </div>
+    <div class="faq-item">
+      <h3>What happens if I'm not happy with the initial mood board direction?</h3>
+      <p>[Placeholder answer copy: explain the revision process for mood board feedback before moving to sourcing and execution.]</p>
+    </div>
+  </section>
+
+  <section class="about-cta">
+    <h2>Still have a question?</h2>
+    <a href="contact.html" class="btn-primary">Get in Touch</a>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Eva M Interiors. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mainNav = document.getElementById('main-nav');
+
+    menuToggle.addEventListener('click', function () {
+      const isOpen = mainNav.classList.toggle('nav-open');
+      menuToggle.classList.toggle('is-active', isOpen);
+      menuToggle.setAttribute('aria-expanded', isOpen);
+    });
+  </script>
+
+</body>
+</html>
