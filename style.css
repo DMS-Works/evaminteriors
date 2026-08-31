@@ -114,8 +114,8 @@ a {
   display: inline-block;
   font-family: 'Cormorant Garamond', serif;
   font-weight: 600;
-  font-size: 18px;
-  padding: 12px 30px;
+  font-size: 16px;
+  padding: 10px 24px;
   background: #F5F1EA;
   color: #2B1E17;
   border-radius: 2px;
@@ -140,11 +140,36 @@ a {
   }
 
   .hero-title {
-    font-size: 26px;
+    font-size: 22px;
+  }
+
+  .hero-subtitle {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .btn-primary {
+    font-size: 15px;
+    padding: 8px 20px;
   }
 
   .hero-inner {
     max-width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-title {
+    font-size: 19px;
+  }
+
+  .hero-subtitle {
+    font-size: 13px;
+  }
+
+  .btn-primary {
+    font-size: 14px;
+    padding: 8px 18px;
   }
 }
 
