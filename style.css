@@ -8,7 +8,7 @@
 body {
   font-family: 'Inter', sans-serif;
   color: #000;
-  background: #fff;
+  background: #F5F1EA;
   line-height: 1.6;
 }
 
@@ -54,16 +54,12 @@ a {
 }
 
 .nav-cta {
-  background: #000;
-  color: #fff;
-  padding: 8px 18px;
-  border-radius: 2px;
-  font-size: 13px;
+  font-size: 14px;
+  color: #000;
 }
 
 .nav-cta:hover {
-  background: #333;
-  color: #fff;
+  color: #5f5e5a;
 }
 
 /* ===== Hero ===== */
