@@ -325,6 +325,12 @@ a {
   color: #000;
 }
 
+.page-title em {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 500;
+}
+
 .page-subtitle {
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
@@ -483,22 +489,62 @@ a {
   margin-bottom: 12px;
 }
 
+.pricing-card .consultation-intro {
+  font-size: 14px;
+  color: #5f5e5a;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
 .pricing-card .price {
+  margin-bottom: 8px;
+}
+
+.pricing-card .price-amount {
   font-family: 'Playfair Display', serif;
-  font-size: 40px;
+  font-size: 36px;
   color: #000;
 }
 
-.pricing-card .price-note {
-  font-size: 13px;
-  color: #5f5e5a;
-  margin-bottom: 16px;
-}
-
-.pricing-card p {
+.pricing-card .price-unit {
+  font-family: 'Inter', sans-serif;
   font-size: 14px;
   color: #5f5e5a;
-  margin-bottom: 24px;
+}
+
+.pricing-card .price-disclaimer {
+  font-size: 12px;
+  color: #8a8375;
+  line-height: 1.5;
+  margin-bottom: 28px;
+}
+
+.booking-widget {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: left;
+}
+
+.booking-widget label {
+  font-size: 13px;
+  color: #5f5e5a;
+  margin-top: 10px;
+}
+
+.booking-widget input[type="date"],
+.booking-widget input[type="time"] {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  padding: 10px 12px;
+  border: 1px solid #c9c2b3;
+  border-radius: 2px;
+  background: #fff;
+}
+
+.booking-widget .btn-primary {
+  margin-top: 20px;
+  text-align: center;
 }
 
 .pricing-card .btn-primary {
