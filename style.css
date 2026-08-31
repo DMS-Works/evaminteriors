@@ -471,7 +471,7 @@ a {
 /* ===== Pricing Page ===== */
 .pricing-hero {
   position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10)), url('PricingBg.png'); /* upload your desk/planner photo to the repo as PricingBg.png */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10)), url('notebook.PNG');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
