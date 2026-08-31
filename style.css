@@ -80,7 +80,7 @@ a {
   position: relative;
   width: 100%;
   aspect-ratio: 1536 / 1024;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url('Bedroom3.png');
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.35) 0px, rgba(0, 0, 0, 0.15) 200px, rgba(0, 0, 0, 0.15) 100%), url('Bedroom3.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -131,8 +131,8 @@ a {
 
 .btn-primary {
   display: inline-block;
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
   font-size: 16px;
   padding: 6px 14px;
   background: #F5F1EA;
