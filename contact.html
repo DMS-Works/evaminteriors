@@ -10,15 +10,15 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <header class="site-header">
     <div class="header-inner">
       <div class="logo-area"></div>
       <nav class="main-nav" id="main-nav">
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
+        <a href="index.html">Home</a>
         <a href="gallery.html">Gallery</a>
+        <a href="services.html">Services</a>
         <a href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
         <a href="faqs.html">FAQs</a>
         <a href="contact.html">Contact</a>
       </nav>
@@ -29,49 +29,37 @@
       </button>
     </div>
   </header>
-
   <section class="page-banner">
-    <p class="page-eyebrow">Contact</p>
-    <h1 class="page-title">Let's talk about your space</h1>
+    <h1 class="page-title">Let's bring your vision to <em>life</em></h1>
   </section>
-
   <section class="contact-form-wrap">
     <form name="contact" method="POST" data-netlify="true" class="contact-form">
       <input type="hidden" name="form-name" value="contact" />
       <label for="name">Name</label>
       <input type="text" id="name" name="name" required>
-
       <label for="email">Email</label>
       <input type="email" id="email" name="email" required>
-
       <label for="phone">Phone (optional)</label>
       <input type="tel" id="phone" name="phone">
-
       <label for="message">Tell us about your project</label>
       <textarea id="message" name="message" rows="5" required></textarea>
-
       <label for="completion-date">Desired completion date</label>
       <p class="field-note">Let us know when you'd ideally like your project finished. Please note timescales vary and can be confirmed after reviewing your enquiry.</p>
       <input type="date" id="completion-date" name="completion-date">
-
       <button type="submit" class="btn-primary">Send Enquiry</button>
     </form>
   </section>
-
   <footer class="site-footer">
     <p>&copy; 2026 Eva M Interiors. All rights reserved.</p>
   </footer>
-
   <script>
     const menuToggle = document.getElementById('menu-toggle');
     const mainNav = document.getElementById('main-nav');
-
     menuToggle.addEventListener('click', function () {
       const isOpen = mainNav.classList.toggle('nav-open');
       menuToggle.classList.toggle('is-active', isOpen);
       menuToggle.setAttribute('aria-expanded', isOpen);
     });
   </script>
-
 </body>
 </html>
