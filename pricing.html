@@ -29,40 +29,59 @@
       </button>
     </div>
   </header>
-  <section class="pricing-hero">
-    <div class="page-banner">
-      <h1 class="page-title">Invest in Your Space</h1>
-    </div>
-    <div class="pricing-card-wrap">
-      <div class="pricing-card">
-        <h2>Consultation</h2>
-        <p class="consultation-intro">A 45-minute consultation designed to understand you, your space alongside your ideas and goals.</p>
-        <p class="price"><span class="price-amount">£50</span> <span class="price-unit">per consultation</span></p>
-        <p class="price-disclaimer">Please note: for more in-depth design consultations, pricing will be quoted according to your requirements.</p>
 
-        <div class="booking-widget">
-          <div class="calendar-header">
-            <button type="button" class="cal-nav" id="cal-prev" aria-label="Previous month">&#8249;</button>
-            <span class="cal-month-label" id="cal-month-label"></span>
-            <button type="button" class="cal-nav" id="cal-next" aria-label="Next month">&#8250;</button>
-          </div>
-          <div class="calendar-daynames">
-            <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
-          </div>
-          <div class="calendar-grid" id="calendar-grid"></div>
+  <section class="photo-banner">
+    <h1 class="photo-banner-title">Invest in Your Space</h1>
+  </section>
 
-          <p class="selected-date-label" id="selected-date-label"></p>
-          <div class="time-slots" id="time-slots"></div>
+  <section class="page-banner">
+    <h2 class="consultation-heading">Consultation</h2>
+    <p class="consultation-intro">A 45-minute consultation designed to understand you, your space alongside your ideas and goals.</p>
+    <p class="price"><span class="price-amount">£50</span> <span class="price-unit">per consultation</span></p>
+    <p class="price-disclaimer">Please note: for more in-depth design consultations, pricing will be quoted according to your requirements.</p>
+  </section>
 
-          <!-- TODO: replace href="#" with your Calendly (or chosen booking tool) link once set up -->
-          <a href="#" class="btn-primary" id="book-consultation-btn">Book Your Consultation</a>
-        </div>
+  <section class="booking-split">
+    <div class="booking-info">
+      <div class="booking-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
       </div>
+      <h3>Select a Date &amp; Time</h3>
+      <p>Choose a date and time that works best for you.</p>
+      <ul class="booking-facts">
+        <li>45 minutes</li>
+        <li>Online consultation</li>
+        <li>One-to-one with Eva</li>
+      </ul>
+      <p class="booking-note">If you require a more in-depth consultation, pricing will be quoted accordingly.</p>
+    </div>
+
+    <div class="booking-calendar">
+      <div class="calendar-header">
+        <button type="button" class="cal-nav" id="cal-prev" aria-label="Previous month">&#8249;</button>
+        <span class="cal-month-label" id="cal-month-label"></span>
+        <button type="button" class="cal-nav" id="cal-next" aria-label="Next month">&#8250;</button>
+      </div>
+      <div class="calendar-daynames">
+        <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
+      </div>
+      <div class="calendar-grid" id="calendar-grid"></div>
+
+      <p class="selected-date-label" id="selected-date-label"></p>
+      <div class="time-slots" id="time-slots"></div>
     </div>
   </section>
+
+  <section class="booking-footer">
+    <p class="timezone-note">All times are shown in your local time zone.</p>
+    <!-- TODO: replace href="#" with your Calendly (or chosen booking tool) link once set up -->
+    <a href="#" class="btn-primary" id="book-consultation-btn">Book Consultation</a>
+  </section>
+
   <footer class="site-footer">
     <p>&copy; 2026 Eva M Interiors. All rights reserved.</p>
   </footer>
+
   <script>
     const menuToggle = document.getElementById('menu-toggle');
     const mainNav = document.getElementById('main-nav');
@@ -95,7 +114,6 @@
       const year = viewDate.getFullYear();
       const month = viewDate.getMonth();
       const firstDay = new Date(year, month, 1);
-      // Convert Sunday(0)-Saturday(6) to Monday-first index (0-6)
       const startOffset = (firstDay.getDay() + 6) % 7;
       const daysInMonth = new Date(year, month + 1, 0).getDate();
       const daysInPrevMonth = new Date(year, month, 0).getDate();
@@ -103,7 +121,6 @@
       const today = new Date();
       today.setHours(0, 0, 0, 0);
 
-      // Leading days from previous month (greyed out, not clickable)
       for (let i = startOffset; i > 0; i--) {
         const cell = document.createElement('span');
         cell.className = 'cal-day cal-day-muted';
@@ -111,7 +128,6 @@
         grid.appendChild(cell);
       }
 
-      // Days in current month
       for (let d = 1; d <= daysInMonth; d++) {
         const cellDate = new Date(year, month, d);
         const cell = document.createElement('button');
@@ -133,7 +149,6 @@
         grid.appendChild(cell);
       }
 
-      // Trailing days from next month to complete the grid
       const totalCells = startOffset + daysInMonth;
       const trailing = (7 - (totalCells % 7)) % 7;
       for (let i = 1; i <= trailing; i++) {
