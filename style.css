@@ -269,6 +269,10 @@ a {
   .hero-title {
     font-size: 48px;
   }
+
+  .photo-banner-title {
+    font-size: 56px;
+  }
 }
 
 /* ===== Services Preview ===== */
@@ -485,7 +489,7 @@ a {
 .photo-banner-title {
   font-family: 'Playfair Display', serif;
   font-weight: 500;
-  font-size: 34px;
+  font-size: 48px;
   color: #F5F1EA;
   text-align: center;
   padding: 0 24px;
