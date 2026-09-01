@@ -469,112 +469,164 @@ a {
 }
 
 /* ===== Pricing Page ===== */
-.pricing-hero {
+.photo-banner {
   position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10)), url('notebook.PNG');
+  width: 100%;
+  aspect-ratio: 3 / 1.4;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('notebook.PNG');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 80px 40px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.pricing-hero .page-banner {
-  padding: 0 40px 40px;
-}
-
-.pricing-hero .page-title {
+.photo-banner-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 34px;
   color: #F5F1EA;
+  text-align: center;
+  padding: 0 24px;
 }
 
-.pricing-card-wrap {
-  max-width: 500px;
+.page-banner {
+  max-width: 700px;
   margin: 0 auto;
-  padding: 20px 40px 60px;
-}
-
-.pricing-card {
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(6px);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  padding: 44px 36px;
-  border-radius: 4px;
+  padding: 50px 40px 20px;
   text-align: center;
 }
 
-.pricing-card h2 {
+.consultation-heading {
   font-family: 'Playfair Display', serif;
   font-weight: 500;
-  font-size: 22px;
-  margin-bottom: 12px;
-  color: #F5F1EA;
+  font-size: 28px;
+  margin-bottom: 14px;
 }
 
-.pricing-card .consultation-intro {
-  font-size: 14px;
-  color: #EDE8DE;
+.consultation-intro {
+  font-size: 15px;
+  color: #5f5e5a;
   margin-bottom: 20px;
   line-height: 1.6;
 }
 
-.pricing-card .price {
-  margin-bottom: 8px;
+.price {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
-  color: #F5F1EA;
+  color: #000;
+  margin-bottom: 10px;
 }
 
-.pricing-card .price-amount {
+.price-amount {
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 16px;
-  color: #F5F1EA;
+  color: #000;
 }
 
-.pricing-card .price-unit {
+.price-unit {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
-  color: #cfc9bc;
+  color: #5f5e5a;
 }
 
-.pricing-card .price-disclaimer {
-  font-size: 12px;
-  color: #cfc9bc;
+.price-disclaimer {
+  font-size: 13px;
+  color: #8a8375;
   line-height: 1.5;
-  margin-bottom: 28px;
 }
 
-.booking-widget {
+.booking-split {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 40px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  border: 1px solid #e5e3dc;
+  border-radius: 6px;
+}
+
+.booking-info {
+  padding: 30px 0 30px 30px;
+}
+
+.booking-icon {
+  width: 40px;
+  height: 40px;
+  background: #000;
+  border-radius: 50%;
   display: flex;
-  flex-direction: column;
-  gap: 6px;
-  text-align: left;
+  align-items: center;
+  justify-content: center;
+  color: #F5F1EA;
+  margin-bottom: 16px;
+}
+
+.booking-info h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.booking-info p {
+  font-size: 14px;
+  color: #5f5e5a;
+  margin-bottom: 16px;
+}
+
+.booking-facts {
+  list-style: none;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e5e3dc;
+}
+
+.booking-facts li {
+  font-size: 14px;
+  color: #5f5e5a;
+  margin-bottom: 8px;
+}
+
+.booking-note {
+  font-size: 12px;
+  color: #8a8375;
+  line-height: 1.5;
+}
+
+.booking-calendar {
+  padding: 30px 30px 30px 0;
+  border-left: 1px solid #e5e3dc;
+  padding-left: 30px;
 }
 
 .calendar-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 16px;
   margin-bottom: 10px;
 }
 
 .cal-nav {
   background: none;
   border: none;
-  color: #F5F1EA;
+  color: #000;
   font-size: 20px;
   cursor: pointer;
   padding: 4px 10px;
 }
 
 .cal-nav:hover {
-  color: #cfc9bc;
+  color: #5f5e5a;
 }
 
 .cal-month-label {
   font-family: 'Playfair Display', serif;
   font-size: 16px;
-  color: #F5F1EA;
+  color: #000;
 }
 
 .calendar-daynames {
@@ -583,7 +635,7 @@ a {
   text-align: center;
   font-size: 11px;
   letter-spacing: 0.5px;
-  color: #cfc9bc;
+  color: #8a8375;
   margin-bottom: 6px;
 }
 
@@ -601,7 +653,7 @@ a {
   justify-content: center;
   font-family: 'Inter', sans-serif;
   font-size: 13px;
-  color: #F5F1EA;
+  color: #000;
   background: none;
   border: none;
   border-radius: 50%;
@@ -609,29 +661,29 @@ a {
 }
 
 .cal-day:hover:not(.cal-day-disabled) {
-  background: rgba(255, 255, 255, 0.15);
+  background: #F5F1EA;
 }
 
 .cal-day-muted {
-  color: rgba(245, 241, 234, 0.3);
+  color: #c9c2b3;
   cursor: default;
 }
 
 .cal-day-disabled {
-  color: rgba(245, 241, 234, 0.25);
+  color: #d8d3c8;
   cursor: not-allowed;
 }
 
 .cal-day-selected {
-  background: #F5F1EA;
-  color: #2B1E17;
+  background: #000;
+  color: #F5F1EA;
   font-weight: 500;
 }
 
 .selected-date-label {
   font-family: 'Inter', sans-serif;
   font-size: 13px;
-  color: #F5F1EA;
+  color: #000;
   margin-bottom: 10px;
 }
 
@@ -639,7 +691,6 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 20px;
 }
 
 .time-slot {
@@ -647,32 +698,46 @@ a {
   font-size: 13px;
   padding: 8px 14px;
   background: none;
-  border: 1px solid rgba(245, 241, 234, 0.4);
+  border: 1px solid #c9c2b3;
   border-radius: 2px;
-  color: #F5F1EA;
+  color: #000;
   cursor: pointer;
 }
 
 .time-slot:hover {
-  border-color: #F5F1EA;
+  border-color: #000;
 }
 
 .time-slot-selected {
-  background: #F5F1EA;
-  color: #2B1E17;
-  border-color: #F5F1EA;
+  background: #000;
+  color: #F5F1EA;
+  border-color: #000;
 }
 
-.booking-widget .btn-primary {
-  margin-top: 4px;
+.booking-footer {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px 40px 60px;
   text-align: center;
-  background: #F5F1EA;
-  color: #2B1E17;
-  width: 100%;
 }
 
-.booking-widget .btn-primary:hover {
-  background: #e9e3d6;
+.timezone-note {
+  font-size: 13px;
+  color: #8a8375;
+  margin-bottom: 20px;
+}
+
+.booking-footer .btn-primary {
+  background: #000;
+  color: #F5F1EA;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 10px 32px;
+}
+
+.booking-footer .btn-primary:hover {
+  background: #222;
 }
 
 /* ===== FAQs Page ===== */
@@ -798,7 +863,36 @@ a {
     padding: 20px 24px 40px;
   }
 
-  .pricing-card {
-    padding: 32px 24px;
+  .photo-banner-title {
+    font-size: 24px;
+  }
+
+  .page-banner {
+    padding: 32px 24px 16px;
+  }
+
+  .consultation-heading {
+    font-size: 22px;
+  }
+
+  .booking-split {
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin: 0 24px;
+    padding: 0;
+  }
+
+  .booking-info {
+    padding: 24px;
+  }
+
+  .booking-calendar {
+    padding: 24px;
+    border-left: none;
+    border-top: 1px solid #e5e3dc;
+  }
+
+  .booking-footer {
+    padding: 20px 24px 40px;
   }
 }
