@@ -475,9 +475,8 @@ a {
 /* ===== Pricing Page ===== */
 .photo-banner {
   position: relative;
-  max-width: 1100px;
-  margin: 0 auto;
-  aspect-ratio: 2.3 / 1;
+  width: 100%;
+  aspect-ratio: 3.4 / 1;
   background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('notebook.PNG');
   background-size: cover;
   background-position: center;
@@ -511,10 +510,12 @@ a {
 }
 
 .consultation-intro {
-  font-size: 15px;
-  color: #5f5e5a;
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 28px;
+  color: #000;
   margin-bottom: 20px;
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
 .price {
