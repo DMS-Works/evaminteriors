@@ -908,6 +908,10 @@ a {
     margin-bottom: -10px;
   }
 
+  .desktop-only {
+    display: none;
+  }
+
   .pricing-card-wrap,
   .faqs-list,
   .contact-form-wrap {
