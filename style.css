@@ -913,6 +913,10 @@ a {
     padding-bottom: 0;
   }
 
+  .mb-tall, .mb-portrait, .mb-wide {
+    aspect-ratio: 1 / 1;
+  }
+
   .desktop-only {
     display: none;
   }
