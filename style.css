@@ -466,25 +466,50 @@ a {
   color: #5f5e5a;
 }
 
-/* ===== Gallery Page ===== */
-.gallery-grid {
+/* ===== Inspo / Moodboard Page ===== */
+.moodboard {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px 40px 60px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  padding: 10px 24px 60px;
+  column-count: 4;
+  column-gap: 10px;
 }
 
-.gallery-placeholder {
-  aspect-ratio: 4 / 5;
+.mb-item {
+  break-inside: avoid;
+  margin-bottom: -6px;
+  padding-bottom: 16px;
+}
+
+.mb-item > div {
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.mb-square { aspect-ratio: 1 / 1; }
+.mb-tall { aspect-ratio: 3 / 4; }
+.mb-portrait { aspect-ratio: 4 / 5; }
+.mb-wide { aspect-ratio: 4 / 3; }
+
+.tilt-1 { transform: rotate(-3deg); }
+.tilt-2 { transform: rotate(2deg); }
+.tilt-3 { transform: rotate(-2deg); }
+.tilt-4 { transform: rotate(4deg); }
+.tilt-5 { transform: rotate(-4deg); }
+.tilt-6 { transform: rotate(3deg); }
+
+.mb-placeholder {
+  width: 100%;
+  height: 100%;
   background: #e9e3d6;
   border: 1px dashed #c9c2b3;
-  border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 13px;
+  text-align: center;
+  padding: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
   color: #8a8375;
 }
 
@@ -873,10 +898,14 @@ a {
     padding: 20px 24px 40px;
   }
 
-  .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 20px 24px 40px;
-    gap: 14px;
+  .moodboard {
+    column-count: 2;
+    column-gap: 6px;
+    padding: 10px 16px 40px;
+  }
+
+  .mb-item {
+    margin-bottom: -10px;
   }
 
   .pricing-card-wrap,
