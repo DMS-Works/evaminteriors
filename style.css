@@ -72,6 +72,13 @@ a {
   color: #e9e3d6;
 }
 
+.nav-inspo {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 15px;
+}
+
 .menu-toggle {
   display: none;
   justify-self: end;
