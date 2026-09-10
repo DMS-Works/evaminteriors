@@ -486,6 +486,10 @@ a {
   overflow: hidden;
 }
 
+.moodboard-mobile {
+  display: none;
+}
+
 .mb-square { aspect-ratio: 1 / 1; }
 .mb-tall { aspect-ratio: 3 / 4; }
 .mb-portrait { aspect-ratio: 4 / 5; }
@@ -899,17 +903,26 @@ a {
   }
 
   .moodboard {
-    column-count: 2;
-    column-gap: 6px;
-    padding: 10px 16px 40px;
-  }
-
-  .mb-item {
-    margin-bottom: -10px;
-  }
-
-  .desktop-only {
     display: none;
+  }
+
+  .moodboard-mobile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    padding: 10px 16px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .mb-col {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .mb-col .mb-item {
+    margin-bottom: -6px;
   }
 
   .pricing-card-wrap,
