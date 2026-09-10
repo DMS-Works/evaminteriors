@@ -486,6 +486,13 @@ a {
   overflow: hidden;
 }
 
+.mb-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .mb-square { aspect-ratio: 1 / 1; }
 .mb-tall { aspect-ratio: 3 / 4; }
 .mb-portrait { aspect-ratio: 4 / 5; }
