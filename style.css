@@ -486,10 +486,6 @@ a {
   overflow: hidden;
 }
 
-.moodboard-mobile {
-  display: none;
-}
-
 .mb-square { aspect-ratio: 1 / 1; }
 .mb-tall { aspect-ratio: 3 / 4; }
 .mb-portrait { aspect-ratio: 4 / 5; }
@@ -903,26 +899,17 @@ a {
   }
 
   .moodboard {
-    display: none;
-  }
-
-  .moodboard-mobile {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 6px;
+    column-count: 2;
+    column-gap: 6px;
     padding: 10px 16px 40px;
-    max-width: 1200px;
-    margin: 0 auto;
   }
 
-  .mb-col {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
+  .mb-item {
+    margin-bottom: -10px;
   }
 
-  .mb-col .mb-item {
-    margin-bottom: -6px;
+  .desktop-only {
+    display: none;
   }
 
   .pricing-card-wrap,
