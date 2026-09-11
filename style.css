@@ -521,6 +521,84 @@ a {
 }
 
 /* ===== Inspo Editorial Layout (Concept 2) ===== */
+.inspo-intro {
+  text-align: center;
+  max-width: 520px;
+  margin: 0 auto 60px;
+  padding: 0 24px;
+}
+
+.intro-divider {
+  width: 1px;
+  height: 36px;
+  background: #c9c2b3;
+  margin: 0 auto 20px;
+}
+
+.intro-copy {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 20px;
+  color: #5f5e5a;
+  line-height: 1.6;
+}
+
+.inspo-hero-showcase {
+  display: grid;
+  grid-template-columns: 2.4fr 1fr;
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto 90px;
+  padding: 0 40px;
+  align-items: start;
+}
+
+.hero-showcase-main {
+  aspect-ratio: 16 / 10;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.hero-showcase-main img,
+.hero-showcase-detail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-showcase-side {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hero-showcase-detail {
+  aspect-ratio: 3 / 4;
+  border: 6px solid #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.hero-showcase-caption {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 16px;
+  color: #5f5e5a;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.hero-showcase-caption::after {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 1px;
+  background: #c9c2b3;
+  margin: 10px auto 0;
+}
+
 .editorial-block {
   display: grid;
   grid-template-columns: 0.9fr 1.6fr;
@@ -1036,6 +1114,33 @@ a {
     grid-template-columns: 1fr;
     padding: 20px 24px 40px;
     gap: 32px;
+  }
+
+  .inspo-intro {
+    margin-bottom: 40px;
+  }
+
+  .intro-copy {
+    font-size: 17px;
+  }
+
+  .inspo-hero-showcase {
+    grid-template-columns: 1fr;
+    padding: 0 24px;
+    margin-bottom: 60px;
+  }
+
+  .hero-showcase-side {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .hero-showcase-detail {
+    flex: 1;
+  }
+
+  .hero-showcase-caption {
+    flex: 1;
   }
 
   .editorial-block,
