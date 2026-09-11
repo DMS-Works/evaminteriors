@@ -653,7 +653,7 @@ a {
 }
 
 .finale-hero {
-  aspect-ratio: 4 / 3;
+  height: 100%;
   border-radius: 2px;
   overflow: hidden;
 }
@@ -1086,6 +1086,11 @@ a {
 
   .finale-visual {
     grid-template-columns: 1fr;
+  }
+
+  .finale-hero {
+    height: auto;
+    aspect-ratio: 4 / 3;
   }
 
   .finale-details {
