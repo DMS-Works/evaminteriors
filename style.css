@@ -553,6 +553,14 @@ a {
   align-items: start;
 }
 
+.inspo-hero-showcase.solo {
+  grid-template-columns: 1fr;
+}
+
+.hero-showcase-main.solo {
+  aspect-ratio: 16 / 9;
+}
+
 .hero-showcase-main {
   aspect-ratio: 16 / 10;
   border-radius: 2px;
