@@ -354,7 +354,7 @@ a {
 /* ===== About Page ===== */
 .story-title {
   font-family: 'Rouge Script', cursive;
-  font-size: 48px;
+  font-size: 70px;
   text-align: center;
   color: #000;
   margin: 0;
@@ -363,8 +363,8 @@ a {
 .story-subtitle {
   font-family: 'Playfair Display', serif;
   font-weight: 900;
-  font-size: 13px;
-  letter-spacing: 6px;
+  font-size: 19px;
+  letter-spacing: 8px;
   text-transform: uppercase;
   text-align: center;
   color: #000;
@@ -1187,12 +1187,12 @@ a {
   }
 
   .story-title {
-    font-size: 36px;
+    font-size: 52px;
   }
 
   .story-subtitle {
-    font-size: 11px;
-    letter-spacing: 4px;
+    font-size: 16px;
+    letter-spacing: 5px;
   }
 
   .about-story-section {
