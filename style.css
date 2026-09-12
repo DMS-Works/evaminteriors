@@ -746,6 +746,7 @@ a {
 
 .finale-hero.split {
   display: flex;
+  flex-direction: column;
   gap: 6px;
 }
 
