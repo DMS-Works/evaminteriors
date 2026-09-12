@@ -744,6 +744,16 @@ a {
   overflow: hidden;
 }
 
+.finale-hero.split {
+  display: flex;
+  gap: 6px;
+}
+
+.finale-hero.split > div {
+  flex: 1;
+  overflow: hidden;
+}
+
 .finale-details {
   display: flex;
   flex-direction: column;
