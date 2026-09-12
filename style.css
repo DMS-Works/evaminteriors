@@ -841,8 +841,8 @@ a {
 }
 
 .editorial-heading {
-  font-family: 'Bodoni Moda', serif;
-  font-weight: 500;
+  font-family: 'DM Serif Display', serif;
+  font-weight: 400;
   font-size: 38px;
   letter-spacing: 0.5px;
   color: #000;
@@ -850,8 +850,7 @@ a {
 }
 
 .editorial-heading em {
-  font-family: 'Bodoni Moda', serif;
-  font-weight: 500;
+  font-family: 'DM Serif Display', serif;
   font-style: italic;
 }
 
