@@ -292,8 +292,9 @@ a {
 }
 
 .testimonials-heading {
-  font-family: 'DM Serif Display', serif;
-  font-weight: 400;
+  font-family: 'Bodoni Moda', serif;
+  font-style: italic;
+  font-weight: 500;
   font-size: 30px;
   color: #000;
   margin: 0 0 36px;
@@ -311,7 +312,7 @@ a {
 }
 
 .testimonial-card {
-  background: #F5F1EA;
+  background: #ECE5D6;
   padding: 28px 24px;
   border-radius: 4px;
   text-align: left;
