@@ -638,21 +638,22 @@ a {
 }
 
 .editorial-heading {
-  font-family: 'Playfair Display', serif;
-  font-weight: 500;
+  font-family: 'Italiana', serif;
+  font-weight: 400;
   font-size: 26px;
+  letter-spacing: 0.5px;
   color: #000;
   margin-bottom: 14px;
 }
 
 .editorial-heading em {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Italiana', serif;
   font-style: italic;
-  font-weight: 500;
 }
 
 .editorial-copy {
-  font-size: 15px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 17px;
   color: #5f5e5a;
   line-height: 1.6;
 }
