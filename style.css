@@ -645,6 +645,12 @@ a {
   margin-bottom: 14px;
 }
 
+.editorial-heading em {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 500;
+}
+
 .editorial-copy {
   font-size: 15px;
   color: #5f5e5a;
