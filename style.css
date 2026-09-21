@@ -388,6 +388,101 @@ a {
   margin: 0;
 }
 
+/* ===== Home: Intro Line ===== */
+.intro-line {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 30px 40px 10px;
+  text-align: center;
+}
+
+.intro-line p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 19px;
+  color: #3d3530;
+  line-height: 1.6;
+}
+
+/* ===== Home: Your Journey ===== */
+.journey-section {
+  background: #F5F1EA;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.journey-heading {
+  font-family: 'DM Serif Display', serif;
+  font-size: 26px;
+  color: #000;
+  margin: 0 0 40px;
+}
+
+.journey-grid {
+  max-width: 700px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px 16px;
+}
+
+.journey-number {
+  font-family: 'DM Serif Display', serif;
+  font-size: 26px;
+  color: #8a8375;
+  margin: 0 0 6px;
+}
+
+.journey-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: #000;
+  margin: 0;
+}
+
+/* ===== Home: About Teaser ===== */
+.about-teaser {
+  background: #F5F1EA;
+  padding: 50px 40px;
+  text-align: center;
+}
+
+.about-teaser-heading {
+  font-family: 'DM Serif Display', serif;
+  font-size: 24px;
+  color: #000;
+  margin: 0 0 14px;
+}
+
+.about-teaser-link {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #000;
+  text-decoration: underline;
+}
+
+/* ===== Home: Closing CTA ===== */
+.home-closing-cta {
+  background: #2B1E17;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.home-closing-heading {
+  font-family: 'DM Serif Display', serif;
+  font-size: 28px;
+  color: #F5F1EA;
+  margin: 0 0 20px;
+}
+
+.home-closing-cta .btn-primary {
+  background: #F5F1EA;
+  color: #2B1E17;
+}
+
+.home-closing-cta .btn-primary:hover {
+  background: #e9e3d6;
+}
+
 /* ===== Services Preview ===== */
 .services-preview {
   max-width: 1200px;
@@ -572,23 +667,15 @@ a {
 }
 
 /* ===== About Page ===== */
-.story-title {
-  font-family: 'Rouge Script', cursive;
-  font-size: 70px;
-  text-align: center;
-  color: #000;
-  margin: 0;
-}
-
-.story-subtitle {
+.eva-title {
   font-family: 'Playfair Display', serif;
   font-weight: 900;
-  font-size: 19px;
-  letter-spacing: 8px;
+  font-size: 32px;
+  letter-spacing: 6px;
   text-transform: uppercase;
   text-align: center;
   color: #000;
-  margin: 8px 0 0;
+  margin: 0;
 }
 
 .about-story-section {
@@ -1397,6 +1484,51 @@ a {
     padding: 40px 24px;
   }
 
+  .intro-line {
+    padding: 24px 24px 6px;
+  }
+
+  .intro-line p {
+    font-size: 16px;
+  }
+
+  .journey-section {
+    padding: 40px 24px;
+  }
+
+  .journey-heading {
+    font-size: 22px;
+    margin-bottom: 28px;
+  }
+
+  .journey-grid {
+    gap: 24px 12px;
+  }
+
+  .journey-number {
+    font-size: 20px;
+  }
+
+  .journey-label {
+    font-size: 12px;
+  }
+
+  .about-teaser {
+    padding: 36px 24px;
+  }
+
+  .about-teaser-heading {
+    font-size: 19px;
+  }
+
+  .home-closing-cta {
+    padding: 44px 24px;
+  }
+
+  .home-closing-heading {
+    font-size: 22px;
+  }
+
   .site-footer {
     padding: 36px 24px 20px;
   }
@@ -1437,13 +1569,9 @@ a {
     padding: 40px 24px 24px;
   }
 
-  .story-title {
-    font-size: 52px;
-  }
-
-  .story-subtitle {
-    font-size: 16px;
-    letter-spacing: 5px;
+  .eva-title {
+    font-size: 24px;
+    letter-spacing: 4px;
   }
 
   .about-story-section {
