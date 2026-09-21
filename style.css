@@ -314,7 +314,7 @@ a {
 .testimonials-section {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 0 50px;
+  padding: 20px 0 50px;
   text-align: center;
 }
 
@@ -421,13 +421,30 @@ a {
   font-size: 19px;
   color: #3d3530;
   line-height: 1.6;
+  margin-bottom: 12px;
 }
 
-/* ===== Home: Your Journey ===== */
+.intro-line-link {
+  display: inline-block;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 17px;
+  color: #000;
+  text-decoration: underline;
+}
+
+/* ===== Home: Vision to Reality ===== */
 .journey-section {
   background: #F5F1EA;
-  padding: 60px 40px;
+  padding: 60px 40px 30px;
   text-align: center;
+}
+
+.journey-divider {
+  width: 1px;
+  height: 36px;
+  background: #c9c2b3;
+  margin: 0 auto 20px;
 }
 
 .journey-heading {
@@ -498,7 +515,6 @@ a {
 
 /* ===== Home: Closing CTA ===== */
 .home-closing-cta {
-  background: #2B1E17;
   padding: 60px 40px;
   text-align: center;
 }
@@ -506,17 +522,17 @@ a {
 .home-closing-heading {
   font-family: 'DM Serif Display', serif;
   font-size: 28px;
-  color: #F5F1EA;
+  color: #000;
   margin: 0 0 20px;
 }
 
 .home-closing-cta .btn-primary {
-  background: #F5F1EA;
-  color: #2B1E17;
+  background: #000;
+  color: #F5F1EA;
 }
 
 .home-closing-cta .btn-primary:hover {
-  background: #e9e3d6;
+  background: #222;
 }
 
 /* ===== Services Preview ===== */
@@ -1529,7 +1545,7 @@ a {
   }
 
   .journey-section {
-    padding: 40px 24px;
+    padding: 40px 24px 20px;
   }
 
   .journey-heading {
