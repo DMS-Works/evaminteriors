@@ -111,8 +111,9 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
-  align-items: center;
-  padding: 60px 40px;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 90px 40px 60px;
 }
 
 .hero-inner {
@@ -247,8 +248,7 @@ a {
 
   .hero {
     padding: 24px;
-    align-items: flex-end;
-    padding-bottom: 40px;
+    align-items: center;
   }
 
   .hero-title {
