@@ -718,6 +718,50 @@ a {
   margin-top: 10px;
 }
 
+/* ===== Portfolio Page ===== */
+.portfolio-cluster {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10px 40px 30px;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 16px;
+}
+
+.portfolio-large {
+  grid-row: span 2;
+  aspect-ratio: 4 / 5;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.portfolio-small {
+  aspect-ratio: 4 / 3;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.portfolio-large img,
+.portfolio-small img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.portfolio-closing-line {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 19px;
+  color: #3d3530;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 560px;
+  margin: 0 auto 50px;
+  padding: 0 40px;
+}
+
 /* ===== About Page ===== */
 .eva-title {
   font-family: 'Playfair Display', serif;
@@ -733,7 +777,7 @@ a {
 .about-story-section {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 50px 40px 80px;
+  padding: 130px 40px 80px;
 }
 
 .about-flowing-text {
@@ -1645,7 +1689,7 @@ a {
   }
 
   .about-story-section {
-    padding: 36px 24px 60px;
+    padding: 70px 24px 60px;
   }
 
   .about-flowing-text {
@@ -1660,6 +1704,19 @@ a {
     grid-template-columns: 1fr;
     padding: 20px 24px 40px;
     gap: 32px;
+  }
+
+  .portfolio-cluster {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    padding: 10px 24px 24px;
+  }
+
+  .portfolio-closing-line {
+    font-size: 16px;
+    padding: 0 24px;
+    margin-bottom: 36px;
   }
 
   .inspo-intro {
