@@ -812,6 +812,14 @@ a {
   margin: 30px 0 14px;
 }
 
+.about-signoff {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 22px;
+  color: #000;
+  margin: 6px 0 0;
+}
+
 .about-content {
   max-width: 1200px;
   margin: 0 auto;
@@ -1709,6 +1717,10 @@ a {
 
   .about-flowing-text p {
     font-size: 17px;
+  }
+
+  .about-signoff {
+    font-size: 19px;
   }
 
   .about-content {
