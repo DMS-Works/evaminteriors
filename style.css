@@ -726,12 +726,15 @@ a {
   display: grid;
   grid-template-columns: 1.4fr 1fr;
   grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "large small1"
+    "large small2";
   gap: 16px;
 }
 
 .portfolio-large {
-  grid-row: span 2;
-  aspect-ratio: 4 / 5;
+  grid-area: large;
+  aspect-ratio: auto;
   border-radius: 4px;
   overflow: hidden;
 }
@@ -740,6 +743,14 @@ a {
   aspect-ratio: 4 / 3;
   border-radius: 4px;
   overflow: hidden;
+}
+
+.portfolio-cluster > *:nth-child(2) {
+  grid-area: small1;
+}
+
+.portfolio-cluster > *:nth-child(3) {
+  grid-area: small2;
 }
 
 .portfolio-large img,
