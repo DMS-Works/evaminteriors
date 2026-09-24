@@ -815,9 +815,20 @@ a {
 .about-signoff {
   font-family: 'Playfair Display', serif;
   font-style: italic;
+  font-weight: 700;
   font-size: 22px;
   color: #000;
   margin: 6px 0 0;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.signoff-line {
+  width: 24px;
+  height: 1px;
+  background: #000;
+  display: inline-block;
 }
 
 .about-content {
