@@ -45,6 +45,14 @@ a {
 
 .logo-area {
   min-width: 160px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-area img {
+  height: 40px;
+  width: auto;
+  display: block;
 }
 
 .main-nav {
@@ -201,6 +209,10 @@ a {
 
   .logo-area {
     min-width: 44px;
+  }
+
+  .logo-area img {
+    height: 32px;
   }
 
   .main-nav {
@@ -1936,5 +1948,86 @@ a {
 
   .booking-footer {
     padding: 20px 24px 40px;
+  }
+}
+
+/* ===== Cookie Consent Banner ===== */
+.cookie-banner {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  background: #000000;
+  color: #F5F1EA;
+  padding: 18px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.cookie-banner p {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 640px;
+}
+
+.cookie-banner p a {
+  color: #F5F1EA;
+  text-decoration: underline;
+}
+
+.cookie-banner-actions {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.cookie-btn {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 8px 22px;
+  border-radius: 2px;
+  cursor: pointer;
+  border: 1px solid #F5F1EA;
+}
+
+.cookie-btn-primary {
+  background: #F5F1EA;
+  color: #000000;
+}
+
+.cookie-btn-primary:hover {
+  background: #e5e3dc;
+}
+
+.cookie-btn-secondary {
+  background: transparent;
+  color: #F5F1EA;
+}
+
+.cookie-btn-secondary:hover {
+  background: rgba(245, 241, 234, 0.1);
+}
+
+@media (max-width: 640px) {
+  .cookie-banner {
+    padding: 16px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cookie-banner-actions {
+    width: 100%;
+  }
+
+  .cookie-btn {
+    flex: 1;
+    text-align: center;
   }
 }
