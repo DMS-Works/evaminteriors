@@ -57,25 +57,14 @@
     </div>
 
     <div class="booking-calendar">
-      <div class="calendar-header">
-        <button type="button" class="cal-nav" id="cal-prev" aria-label="Previous month">&#8249;</button>
-        <span class="cal-month-label" id="cal-month-label"></span>
-        <button type="button" class="cal-nav" id="cal-next" aria-label="Next month">&#8250;</button>
-      </div>
-      <div class="calendar-daynames">
-        <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
-      </div>
-      <div class="calendar-grid" id="calendar-grid"></div>
-
-      <p class="selected-date-label" id="selected-date-label"></p>
-      <div class="time-slots" id="time-slots"></div>
+      <!-- Calendly inline embed -->
+      <div class="calendly-inline-widget" data-url="https://calendly.com/evaminteriors-info/30min?hide_gdpr_banner=1&background_color=f5f1ea&text_color=000000&primary_color=000000" style="min-width:280px;height:680px;"></div>
+      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
     </div>
   </section>
 
   <section class="booking-footer">
     <p class="timezone-note">All times are shown in your local time zone.</p>
-    <!-- TODO: replace href="#" with your Calendly (or chosen booking tool) link once set up -->
-    <a href="#" class="btn-primary" id="book-consultation-btn">Book Consultation</a>
   </section>
 
   <footer class="site-footer">
@@ -128,112 +117,6 @@
       menuToggle.classList.toggle('is-active', isOpen);
       menuToggle.setAttribute('aria-expanded', isOpen);
     });
-
-    // ===== Custom calendar + time slot picker =====
-    const monthLabel = document.getElementById('cal-month-label');
-    const grid = document.getElementById('calendar-grid');
-    const prevBtn = document.getElementById('cal-prev');
-    const nextBtn = document.getElementById('cal-next');
-    const selectedDateLabel = document.getElementById('selected-date-label');
-    const timeSlotsWrap = document.getElementById('time-slots');
-
-    const timeSlots = ["9:00 AM", "11:00 AM", "1:00 PM", "3:00 PM", "4:30 PM"];
-    const monthNames = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-    const dayNames = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
-
-    let viewDate = new Date();
-    viewDate.setDate(1);
-    let selectedDate = null;
-
-    function renderCalendar() {
-      grid.innerHTML = '';
-      monthLabel.textContent = `${monthNames[viewDate.getMonth()]} ${viewDate.getFullYear()}`;
-
-      const year = viewDate.getFullYear();
-      const month = viewDate.getMonth();
-      const firstDay = new Date(year, month, 1);
-      const startOffset = (firstDay.getDay() + 6) % 7;
-      const daysInMonth = new Date(year, month + 1, 0).getDate();
-      const daysInPrevMonth = new Date(year, month, 0).getDate();
-
-      const today = new Date();
-      today.setHours(0, 0, 0, 0);
-
-      for (let i = startOffset; i > 0; i--) {
-        const cell = document.createElement('span');
-        cell.className = 'cal-day cal-day-muted';
-        cell.textContent = daysInPrevMonth - i + 1;
-        grid.appendChild(cell);
-      }
-
-      for (let d = 1; d <= daysInMonth; d++) {
-        const cellDate = new Date(year, month, d);
-        const cell = document.createElement('button');
-        cell.type = 'button';
-        cell.className = 'cal-day';
-        cell.textContent = d;
-
-        if (cellDate < today) {
-          cell.classList.add('cal-day-disabled');
-          cell.disabled = true;
-        } else {
-          cell.addEventListener('click', () => selectDate(cellDate, cell));
-        }
-
-        if (selectedDate && cellDate.getTime() === selectedDate.getTime()) {
-          cell.classList.add('cal-day-selected');
-        }
-
-        grid.appendChild(cell);
-      }
-
-      const totalCells = startOffset + daysInMonth;
-      const trailing = (7 - (totalCells % 7)) % 7;
-      for (let i = 1; i <= trailing; i++) {
-        const cell = document.createElement('span');
-        cell.className = 'cal-day cal-day-muted';
-        cell.textContent = i;
-        grid.appendChild(cell);
-      }
-    }
-
-    function selectDate(date, cellEl) {
-      selectedDate = date;
-      document.querySelectorAll('.cal-day').forEach(el => el.classList.remove('cal-day-selected'));
-      if (cellEl) cellEl.classList.add('cal-day-selected');
-
-      const label = `${dayNames[(date.getDay() + 6) % 7]}, ${date.getDate()} ${monthNames[date.getMonth()]} ${date.getFullYear()}`;
-      selectedDateLabel.textContent = label;
-
-      renderTimeSlots();
-    }
-
-    function renderTimeSlots() {
-      timeSlotsWrap.innerHTML = '';
-      timeSlots.forEach(time => {
-        const btn = document.createElement('button');
-        btn.type = 'button';
-        btn.className = 'time-slot';
-        btn.textContent = time;
-        btn.addEventListener('click', () => {
-          document.querySelectorAll('.time-slot').forEach(el => el.classList.remove('time-slot-selected'));
-          btn.classList.add('time-slot-selected');
-        });
-        timeSlotsWrap.appendChild(btn);
-      });
-    }
-
-    prevBtn.addEventListener('click', () => {
-      viewDate.setMonth(viewDate.getMonth() - 1);
-      renderCalendar();
-    });
-
-    nextBtn.addEventListener('click', () => {
-      viewDate.setMonth(viewDate.getMonth() + 1);
-      renderCalendar();
-    });
-
-    renderCalendar();
   </script>
 </body>
 </html>
