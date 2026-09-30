@@ -15,7 +15,7 @@
 <body>
   <header class="site-header">
     <div class="header-inner">
-      <div class="logo-area"></div>
+      <div class="logo-area"><a href="index.html"><img src="logo.png" alt="Eva M Interiors"></a></div>
       <nav class="main-nav" id="main-nav">
         <a href="index.html">Home</a>
         <a href="services.html">Services</a>
