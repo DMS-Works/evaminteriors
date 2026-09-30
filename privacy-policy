@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <meta name="description" content="Privacy Policy for Eva M Interiors — how we collect, use and protect your personal data in line with UK GDPR.">
+  <title>Privacy Policy | Eva M Interiors</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="cookie-consent.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo-area"></div>
+      <nav class="main-nav" id="main-nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="gallery.html">Inspiration</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="faqs.html">FAQs</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="page-banner">
+    <h1 class="page-title">Privacy Policy</h1>
+  </section>
+
+  <section class="faqs-list">
+    <p style="margin-bottom: 24px; color: #5f5e5a; font-size: 14px;">Last updated: 30 September 2026</p>
+
+    <div class="faq-item">
+      <h3>Who we are</h3>
+      <p>Eva M Interiors is an interior design consultancy operated by Eva M as a sole trader, based in London, United Kingdom. For the purposes of UK data protection law, Eva M Interiors is the "data controller" of the personal data described in this policy.</p>
+      <p>Contact: <a href="mailto:info@evaminteriors.co.uk">info@evaminteriors.co.uk</a></p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What personal data we collect</h3>
+      <p>We collect personal data when you interact with our website, book a consultation, or get in touch. This includes:</p>
+      <p><strong>Contact form:</strong> name, email address, phone number (optional), details of your project, and your desired completion date.</p>
+      <p><strong>Booking a consultation:</strong> name, email address, and the date/time you select, collected via our booking provider, Calendly.</p>
+      <p><strong>Payment:</strong> when you pay for a consultation, your payment is processed directly by Stripe. We do not see or store your full card details — Stripe handles this securely on our behalf.</p>
+      <p><strong>Website usage:</strong> if you consent via our cookie banner, we collect anonymised analytics data about how you use our site (pages visited, time on site, general location) via Google Analytics.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How we use your data</h3>
+      <p>We use your personal data to:</p>
+      <p>&bull; Respond to enquiries submitted through our contact form<br>
+      &bull; Schedule and manage your consultation booking, including sending confirmation and reminder emails<br>
+      &bull; Process payment for your consultation<br>
+      &bull; Send you a Zoom link and any related joining information for your consultation<br>
+      &bull; Understand how visitors use our website, to improve it (only where you've given consent to analytics cookies)</p>
+      <p>We do not sell your personal data to third parties, and we do not use your data for marketing unless you separately opt in to that in future.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Our legal basis for processing</h3>
+      <p>We rely on the following legal bases under UK GDPR:</p>
+      <p>&bull; <strong>Contract</strong> — to respond to your enquiry and deliver the consultation you've booked and paid for<br>
+      &bull; <strong>Consent</strong> — for non-essential cookies, such as Google Analytics, which only load after you accept our cookie banner<br>
+      &bull; <strong>Legitimate interest</strong> — to respond to general enquiries and keep basic records of client communication</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Who we share your data with</h3>
+      <p>We use a small number of trusted third-party services to run this website and our booking process. Each only receives the data it needs to perform its function:</p>
+      <p><strong>Netlify</strong> — hosts our website and processes contact form submissions.<br>
+      <strong>Calendly</strong> — manages consultation bookings and sends confirmation/reminder emails.<br>
+      <strong>Zoom</strong> — provides the video link for virtual consultations, connected via Calendly.<br>
+      <strong>Stripe</strong> — processes consultation payments securely. Stripe is PCI-DSS compliant and we never store your full payment details ourselves.<br>
+      <strong>Google Fonts</strong> — loads the typefaces used on this site. Google may receive your IP address as part of this.<br>
+      <strong>Google Analytics</strong> — provides anonymised website usage statistics, and only runs if you accept analytics cookies.</p>
+      <p>Each of these providers has its own privacy policy governing how they handle data on our behalf.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Cookies</h3>
+      <p>Our website uses a small number of cookies:</p>
+      <p><strong>Essential cookies:</strong> used to remember your cookie consent choice. These are necessary for the site to function and don't require consent.</p>
+      <p><strong>Analytics cookies:</strong> set by Google Analytics, only if you click "Accept" on our cookie banner. These help us understand how visitors use the site. You can decline these at any time by choosing "Decline" on the banner, and your choice is remembered for future visits.</p>
+      <p>You can also clear cookies at any time through your browser settings, which will reset your consent choice.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How long we keep your data</h3>
+      <p>We keep enquiry and booking data for as long as reasonably necessary to deliver our services and meet legal or accounting obligations (such as UK tax record-keeping requirements, which typically require financial records to be kept for up to 6 years). We periodically review and remove data that's no longer needed.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Your rights</h3>
+      <p>Under UK GDPR, you have the right to:</p>
+      <p>&bull; Access the personal data we hold about you<br>
+      &bull; Ask us to correct inaccurate data<br>
+      &bull; Ask us to delete your data, where applicable<br>
+      &bull; Restrict or object to how we process your data<br>
+      &bull; Request a copy of your data in a portable format<br>
+      &bull; Withdraw consent at any time (for example, by declining analytics cookies)</p>
+      <p>To exercise any of these rights, contact us at <a href="mailto:info@evaminteriors.co.uk">info@evaminteriors.co.uk</a>. You also have the right to complain to the UK's data protection regulator, the <a href="https://ico.org.uk" target="_blank" rel="noopener">Information Commissioner's Office (ICO)</a>, if you believe your data has been mishandled.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Children's privacy</h3>
+      <p>Our website and services are intended for adults. We do not knowingly collect personal data from children.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Changes to this policy</h3>
+      <p>We may update this policy from time to time, for example if we start using a new tool or service. Any changes will be posted on this page with an updated "last updated" date.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Contact us</h3>
+      <p>If you have any questions about this policy or how we handle your data, please get in touch at <a href="mailto:info@evaminteriors.co.uk">info@evaminteriors.co.uk</a>.</p>
+    </div>
+  </section>
+
+  <section class="about-cta">
+    <h2>Still have a question?</h2>
+    <a href="contact.html" class="btn-primary">Get in Touch</a>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-columns">
+      <div class="footer-col">
+        <p class="footer-brand-name">Eva M Interiors</p>
+        <p class="footer-tagline">Thoughtfully tailored for you.</p>
+      </div>
+      <div class="footer-col">
+        <p class="footer-heading">Quick Links</p>
+        <div class="footer-links">
+          <a href="services.html">Services</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="gallery.html">Inspiration</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="about.html">About</a>
+          <a href="faqs.html">FAQs</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <p class="footer-heading">Contact</p>
+        <div class="footer-contact">
+          <a href="mailto:info@evaminteriors.co.uk">info@evaminteriors.co.uk</a>
+          <span>London, UK</span>
+        </div>
+        <p class="footer-heading">Follow</p>
+        <div class="footer-social">
+          <div class="footer-social-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+            <a href="#">Instagram</a>
+          </div>
+          <div class="footer-social-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M15 3c0 2.5 2 4.5 4.5 4.5"/></svg>
+            <a href="#">TikTok</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Eva M Interiors. All rights reserved.</p>
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mainNav = document.getElementById('main-nav');
+    menuToggle.addEventListener('click', function () {
+      const isOpen = mainNav.classList.toggle('nav-open');
+      menuToggle.classList.toggle('is-active', isOpen);
+      menuToggle.setAttribute('aria-expanded', isOpen);
+    });
+  </script>
+</body>
+</html>
